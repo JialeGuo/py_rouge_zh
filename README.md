@@ -1,13 +1,16 @@
 # Py-rouge
 A full Python implementation of the ROUGE metric, especially for Chinese texts processing. Mainly based on https://github.com/Diego999/py-rouge 
+中文文本Rouge值相关计算的python实现
+
+欢迎Star :grin:
 
 # Important remarks
-- Diego的实现主要适用于英文文本，主要调整的地方是其代码内的正则表达式部分以及针对英文处理的部分(如 lower()等)
+- Diego的实现主要适用于英文文本，主要调整的地方是其代码内的正则表达式部分以及针对英文处理的部分(如 .lower()等)
 - 输入分词后或按字隔开的中文文本
 - 注意输入输出的形式(hypothesis: hypothesis summary, string; references: reference summary/ies, either string or list of strings (if multiple))
 
 
-## Installation
+# Installation
 
 
 ```shell
