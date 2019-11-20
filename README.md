@@ -34,7 +34,7 @@ all_references = [["哈 工 大 在 哈 尔 滨", "黑 龙 江 太 冷 了"]]
 scores = evaluator.get_scores(all_hypothesis, all_references)
 print(scores)
 
-It produces the following output:
 ```
+It produces the following output:
 {'rouge-2': {'r': 0.1, 'p': 0.1, 'f': 0.10000000000000002}, 'rouge-3': {'r': 0.0, 'p': 0.0, 'f': 0.0}, 'rouge-4': {'r': 0.0, 'p': 0.0, 'f': 0.0}, 'rouge-1': {'r': 0.5, 'p': 0.5, 'f': 0.5}}
 ```    
