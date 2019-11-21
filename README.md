@@ -27,6 +27,14 @@ import rouge_zh
 def prepare_results(m, p, r, f):
     return '\t{}:\t{}: {:5.2f}\t{}: {:5.2f}\t{}: {:5.2f}'.format(m, 'P', 100.0 * p, 'R', 100.0 * r, 'F1', 100.0 * f)
 
+evaluator = rouge_zh.Rouge(metrics=['rouge-n'],
+                           max_n=4,
+                           limit_length=True,
+                           length_limit=100,
+                           length_limit_type='words',
+                           alpha=0.5, # Default F1_score
+                           weight_factor=1.2,
+                           stemming=True)
 
 all_hypothesis = ["哈 尔 滨 是 黑 龙 江 的 省 会"]
 all_references = [["哈 工 大 在 哈 尔 滨", "黑 龙 江 太 冷 了"]]
