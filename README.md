@@ -24,9 +24,6 @@ python setup.py install
 ```python
 import rouge_zh
 
-def prepare_results(m, p, r, f):
-    return '\t{}:\t{}: {:5.2f}\t{}: {:5.2f}\t{}: {:5.2f}'.format(m, 'P', 100.0 * p, 'R', 100.0 * r, 'F1', 100.0 * f)
-
 evaluator = rouge_zh.Rouge(metrics=['rouge-n'],
                            max_n=4,
                            limit_length=True,
